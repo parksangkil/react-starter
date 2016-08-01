@@ -5,9 +5,11 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "tsc": "tsc --jsx react --experimentalDecorators --preserveConstEnums --rootDir src",
-    "tsc-native-dev": "npm run tsc -- --module es6 --target es6 --sourceMap --outDir app",
-    "tsc-native-dev-watch": "npm run tsc-native-dev -- -w",
-    "clean": "rimraf app build"
+    "tsc-dev": "npm run tsc --module commonjs --target es5 --sourceMap",
+    "tsc-dev-native": "npm run tsc -- --outDir app/native",
+    "tsc-dev-native-watch": "npm run tsc-native-dev -- -w",
+    "tsc-dev-web": "npm run tsc -- --outDir app/web",
+    "clean": "rimraf app"
   },
   "dependencies": {
     "axios": "^0.13.1",

@@ -43,3 +43,4 @@ typings/
 .vscode/
 app-dev/
 app-prod/
+app/
