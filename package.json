@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "build-dev": "tsc --project ./src/tsconfig.json",
+    "build-dev": "tsc --project ./tsconfig.json",
     "build-dev-watch": "npm run build-dev -- -w",
-    "build": "tsc --project ./src/tsconfig.prod.json",
+    "build": "tsc --project ./tsconfig.prod.json",
     "clean": "rimraf app-dev app-prod"
   },
   "dependencies": {

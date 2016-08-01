@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "outDir": "./app-prod",
+        "allowJs": true
+    },
+    "exclude": [
+        "node_modules",
+        "android",
+        "ios",
+        "app-dev",
+        "app-prod"
+    ]
+}
