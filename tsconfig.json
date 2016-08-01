@@ -1,15 +1,10 @@
 {
     "compilerOptions": {
-        "module": "es6",
-        "target": "es6",
         "allowSyntheticDefaultImports": false,
         "jsx": "react",
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "experimentalDecorators": true,
-        "preserveConstEnums": true,
-        "sourceMap": true,
-        "rootDir": "./src",
-        "outDir": "./app-dev"
+        "preserveConstEnums": true
     },
     "filesGlob": [
         "typings/**/*.d.ts",
@@ -20,7 +15,7 @@
         "node_modules",
         "android",
         "ios",
-        "app-dev",
-        "app-prod"
+        "app",
+        "build"
     ]
 }

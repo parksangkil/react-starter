@@ -8,7 +8,7 @@ import {
     ViewStyle
 } from 'react-native';
 
-class reactWebNativeReduxStarter extends React.Component {
+class reactWebNativeReduxStarter extends React.Component<any, any> {
     render() {
         return (
             <View style={styles.container}>
