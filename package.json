@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build-dev": "tsc --project ./src/tsconfig.json",
+    "build-dev-watch": "npm run build-dev -- -w"
   },
   "dependencies": {
     "axios": "^0.13.1",
@@ -29,6 +31,7 @@
     "redux-logger": "^2.6.1",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
+    "typescript": "^1.8.10",
     "webpack": "^1.13.1"
   }
 }
