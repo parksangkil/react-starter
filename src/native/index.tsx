@@ -3,11 +3,12 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  TextStyle,
+  View,
+  ViewStyle
 } from 'react-native';
 
-class reactWebNativeReduxStarter extends Component {
-  render() {
+const reactWebNativeReduxStarter = () => {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -22,10 +23,15 @@ class reactWebNativeReduxStarter extends Component {
         </Text>
       </View>
     );
-  }
-}
+};
 
-const styles = StyleSheet.create({
+type Styles = {
+  container: ViewStyle,
+  welcome: TextStyle,
+  instructions: TextStyle
+};
+
+const styles: Styles = {
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -42,6 +48,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+};
 
 export default reactWebNativeReduxStarter;
