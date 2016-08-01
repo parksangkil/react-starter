@@ -1,16 +1,21 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "allowSyntheticDefaultImports": true,
+        "module": "es6",
+        "target": "es6",
+        "allowSyntheticDefaultImports": false,
         "jsx": "react",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "experimentalDecorators": true,
         "preserveConstEnums": true,
         "sourceMap": true,
-        "outDir": "./app-dev",
-        "allowJs": true
+        "rootDir": "./src",
+        "outDir": "./app-dev"
     },
+    "filesGlob": [
+        "typings/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
     "exclude": [
         "node_modules",
         "android",
