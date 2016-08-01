@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "build-dev": "tsc --project ./src/tsconfig.json",
     "build-dev-watch": "npm run build-dev -- -w",
-    "build": "tsc --project ./src/tsconfig.prod.json"
+    "build": "tsc --project ./src/tsconfig.prod.json",
+    "clean": "rimraf app-dev app-prod"
   },
   "dependencies": {
     "axios": "^0.13.1",
@@ -29,6 +30,7 @@
     "enzyme": "^2.4.1",
     "mocha": "^2.5.3",
     "redux-logger": "^2.6.1",
+    "rimraf": "^2.5.4",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0",
     "tslint": "^3.14.0",
