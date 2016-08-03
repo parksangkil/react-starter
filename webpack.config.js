@@ -2,7 +2,6 @@ var path = require('path');
 var webpack = require('webpack');
 
 var nodeModulesPath = path.join(__dirname, 'node_modules');
-var isProduction = process.env.NODE_ENV === "production";
 
 var config = {
     entry: {
@@ -48,23 +47,25 @@ var config = {
     },
 
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
-    ]
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true,
+            sourceMap: false,
+            compressor: {
+                warnings: false
+            }
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        })
+    ],
 
-    // TODO: tslint
+    tslint: {
+        emitErrors: true,
+        formattersDirectory: path.join(nodeModulesPath, 'tslint-loader', 'formatters')
+    }
 };
-
-if (isProduction) {
-    config.plugins.push(new webpack.optimize.UglifyJsPlugin({
-        minimize: true,
-        sourceMap: false,
-        compressor: {
-            warnings: false
-        }
-    }));
-    config.plugins.push(new webpack.DefinePlugin({
-        'process.env': { NODE_ENV: '"production' }
-    }));
-}
 
 module.exports = config;
