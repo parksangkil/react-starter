@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "tsc": "tsc --jsx react --experimentalDecorators --module commonjs --target es5 --preserveConstEnums --rootDir src",
+    "tsc": "tsc -p tsconfig.json",
     "tsc-dev": "npm run tsc --sourceMap",
     "tsc-dev-native": "npm run tsc -- --outDir app/native",
     "tsc-dev-native-watch": "npm run tsc-native-dev -- -w",
