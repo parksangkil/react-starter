@@ -4,13 +4,14 @@
   "private": true,
   "scripts": {
     "clean-copy-index": "npm run clean && mkdir app && cp src/index.html app/index.html",
-    "start": "npm run clean-copy-index && node tools/server.js",
-    "build": "npm run clean-copy-index && webpack",
+
+    "build-run-web-dev": "npm run clean-copy-index && node tools/server.js",
+    "build-web-prod": "npm run clean-copy-index && webpack",
+
     "tsc": "tsc -p tsconfig.json",
-    "tsc-dev": "npm run tsc --sourceMap",
-    "tsc-dev-native": "npm run tsc -- --outDir app/native",
-    "tsc-dev-native-watch": "npm run tsc-native-dev -- -w",
-    "tsc-dev-web": "npm run tsc -- --outDir app/web",
+    "build-dev": "npm run tsc -- --sourceMap --outDir app",
+    "build-dev-watch": "npm run build-dev -- -w",
+    
     "clean": "rimraf app",
     "lint": "tslint \"src/**/*.ts?(x)\""
   },
