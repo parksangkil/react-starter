@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "npm run clean && mkdir app && cp src/index.html app/index.html && node tools/server.js",
-    "build": "webpack",
+    "clean-copy-index": "npm run clean && mkdir app && cp src/index.html app/index.html", 
+    "start": "npm run clean-copy-index && node tools/server.js",
+    "build": "npm run clean-copy-index && webpack -p",
     "tsc": "tsc -p tsconfig.json",
     "tsc-dev": "npm run tsc --sourceMap",
     "tsc-dev-native": "npm run tsc -- --outDir app/native",

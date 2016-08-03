@@ -28,7 +28,7 @@ var config = {
 
     output: {
         path: path.join(__dirname, 'app'),
-        filename: '[name]_[chunkhash].js'
+        filename: '[name].js'
     },
 
     module: {
@@ -48,7 +48,7 @@ var config = {
     },
 
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors_[chunkhash].js')
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
     ]
 
     // TODO: tslint
@@ -56,7 +56,9 @@ var config = {
 
 if (isProduction) {
     config.plugins.push(new webpack.optimize.UglifyJsPlugin({
-        compress: {
+        minimize: true,
+        sourceMap: false,
+        compressor: {
             warnings: false
         }
     }));
