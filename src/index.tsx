@@ -1,8 +1,8 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import * as React from "react";
+import * as ReactDom from "react-dom";
 
 class App extends React.Component<any, any> {
-    render() {
+    public render(): JSX.Element {
         return (
             <div>
                 Hello, world!
@@ -11,4 +11,4 @@ class App extends React.Component<any, any> {
     }
 }
 
-ReactDom.render(<App />, document.getElementById('app'));
+ReactDom.render(<App />, document.getElementById("app"));

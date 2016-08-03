@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 class reactWebNativeReduxStarter extends React.Component<any, any> {
-    render() {
+    public render(): JSX.Element {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>

@@ -31,9 +31,16 @@ var config = {
     },
 
     module: {
-        // TODO: odkomentovat tslint
         // preLoaders: [
-        //     { test: /\.tsx?$/, loader: 'tslint', include: path.resolve(__dirname, 'src') }
+        //     {
+        //         test: /\.tsx?$/,
+        //         loader: 'tslint',
+        //         include: path.resolve(__dirname, 'src'),
+        //         query: {
+        //             "type-check": true,
+        //             "project": "tsconfig.json"
+        //         }
+        //     }
         // ],
         noParse: [],
         loaders: [
