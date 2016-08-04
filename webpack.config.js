@@ -27,21 +27,10 @@ var config = {
 
     output: {
         path: path.join(__dirname, 'app'),
-        filename: '[name].js'
+        filename: 'assets/[name].js'
     },
 
     module: {
-        // preLoaders: [
-        //     {
-        //         test: /\.tsx?$/,
-        //         loader: 'tslint',
-        //         include: path.resolve(__dirname, 'src'),
-        //         query: {
-        //             "type-check": true,
-        //             "project": "tsconfig.json"
-        //         }
-        //     }
-        // ],
         noParse: [],
         loaders: [
             {
@@ -54,7 +43,7 @@ var config = {
     },
 
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'assets/vendors.js'),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             sourceMap: false,
