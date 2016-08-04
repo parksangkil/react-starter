@@ -3,16 +3,21 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "clean-copy-index": "npm run clean && mkdir app && cp src/index.html app/index.html",
+    "clean-copy-index": "npm run clean-app && mkdir app && cp src/index.html app/index.html",
 
     "build-run-web-dev": "npm run clean-copy-index && node tools/server.js",
     "build-web-prod": "npm run clean-copy-index && webpack",
 
-    "tsc": "tsc -p tsconfig.json",
-    "build-native-dev": "npm run tsc -- --sourceMap --outDir app --target es6 --module es6",
+    "generate-native-ts-config": "node tools/generate-native-ts-config.js",
+
+    "tsc-native": "tsc -p tsconfig.native.json",
+    "build-native-dev": "npm run generate-native-ts-config && npm run clean-native && npm run tsc-native -- --sourceMap --outDir app-native --target es6 --module es6",
     "build-native-dev-watch": "npm run build-native-dev -- -w",
     
-    "clean": "rimraf app",
+    "clean-app": "rimraf app",
+    "clean-native": "rimraf app-native",
+    "clean": "npm run clean-app && npm run clean-native",
+
     "lint": "tslint \"src/**/*.ts?(x)\""
   },
   "dependencies": {

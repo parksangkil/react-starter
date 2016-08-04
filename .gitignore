@@ -41,6 +41,6 @@ android/app/libs
 android/keystores/debug.keystore
 typings/
 .vscode/
-app-dev/
-app-prod/
 app/
+app-native/
+tsconfig.native.json
