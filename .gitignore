@@ -44,3 +44,4 @@ typings/
 app/
 app-native/
 tsconfig.native.json
+test/*.js

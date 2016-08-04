@@ -1,14 +1,9 @@
 {
   "dependencies": {
-    "chai": "registry:npm/chai#3.5.0+20160723033700",
-    "chai-as-promised": "registry:npm/chai-as-promised#5.1.0+20160310030142",
     "del": "registry:npm/del#2.2.0+20160416211512",
-    "enzyme": "registry:npm/enzyme#2.2.0+20160322031343",
     "react-dom": "registry:npm/react-dom#15.0.1+20160705210405",
     "react-redux": "registry:npm/react-redux#4.4.0+20160614222153",
     "redux-thunk": "registry:npm/redux-thunk#2.0.0+20160525185520",
-    "sinon": "registry:npm/sinon#1.16.0+20160723033700",
-    "sinon-chai": "registry:npm/sinon-chai#2.8.0+20160310030142",
     "validator": "registry:npm/validator#4.5.1+20160723033700",
     "webpack": "registry:npm/webpack#1.12.9+20160418172948"
   },
@@ -16,8 +11,7 @@
     "axios": "registry:dt/axios#0.9.1+20160629101425",
     "classnames": "registry:dt/classnames#0.0.0+20160316155526",
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
-    "mocha": "registry:dt/mocha#2.2.5+20160720003353",
-    "react": "registry:dt/react#0.14.0+20160720060442",
+    "react": "registry:dt/react#0.14.0+20160802191555",
     "react-native": "registry:dt/react-native#0.29.0+20160726035834",
     "redux": "registry:dt/redux#3.5.2+20160703092728",
     "redux-logger": "registry:dt/redux-logger#2.6.0+20160619033847"

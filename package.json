@@ -15,7 +15,9 @@
     "clean": "npm run clean-app && npm run clean-native",
     "lint": "tslint \"src/**/*.ts?(x)\" || true",
     "lint-watch": "watch \"npm run lint\" ./src",
-    "dev": "run-p build-run-web-dev build-native-dev-watch lint-watch"
+    "dev": "run-p build-run-web-dev build-native-dev-watch lint-watch",
+    "pretest": "cd test && tsc -p tsconfig.json",
+    "test": "mocha"
   },
   "dependencies": {
     "axios": "^0.13.1",

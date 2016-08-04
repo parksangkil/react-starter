@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": false,
+        "jsx": "react",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "target": "es5"
+    }
+}
