@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Text, View} from "react-native";
-import {styles} from "./index.styles";
+import {styles} from "./App.styles";
 
 export class App extends React.Component<any, any> {
     public constructor(props: any) {
