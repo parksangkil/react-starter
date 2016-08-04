@@ -7,7 +7,9 @@ var exclude = [
     "node_modules",
     "app",
     "app-native",
-    "tools"
+    "tools",
+    "src/web",
+    "src/index.tsx"
 ];
 
 var tsconfigNative = tsconfig;
