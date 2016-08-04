@@ -9,8 +9,8 @@
     "build-web-prod": "npm run clean-copy-index && webpack",
 
     "tsc": "tsc -p tsconfig.json",
-    "build-dev": "npm run tsc -- --sourceMap --outDir app",
-    "build-dev-watch": "npm run build-dev -- -w",
+    "build-native-dev": "npm run tsc -- --sourceMap --outDir app --target es6 --module es6",
+    "build-native-dev-watch": "npm run build-native-dev -- -w",
     
     "clean": "rimraf app",
     "lint": "tslint \"src/**/*.ts?(x)\""
