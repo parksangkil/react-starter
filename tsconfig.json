@@ -13,6 +13,7 @@
         "src/native",
         "app",
         "app-native",
-        "tools"
+        "tools",
+        "test"
     ]
 }
