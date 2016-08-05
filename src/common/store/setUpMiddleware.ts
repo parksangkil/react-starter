@@ -1,8 +1,7 @@
-import {createStore, applyMiddleware, compose} from "redux";
+import {applyMiddleware, compose} from "redux";
 import * as thunk from "redux-thunk";
-import {rootReducer} from "./reducers/root";
 
-const middleware: Array<any> = [thunk.default];
+const middlewareList: Array<any> = [thunk.default];
 
 function setUpReduxDevTools() {
     return typeof window === "object" &&
@@ -27,10 +26,6 @@ function applyMiddlewareAndInDevModeUseDevTools(middleware: Array<any>) {
     }
 }
 
-export function setUpStore(initialState: any) {
-    return createStore(
-        rootReducer,
-        initialState,
-        applyMiddlewareAndInDevModeUseDevTools(middleware)
-    );
-};
+export function setUpMiddleware() {
+    return applyMiddlewareAndInDevModeUseDevTools(middlewareList);
+}

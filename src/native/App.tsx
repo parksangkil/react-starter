@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Text, View} from "react-native";
 import {styles} from "./App.styles";
-import {createProvider} from "../common/createProvider";
+import {createProvider} from "../common/store/createProvider";
 
 class AppComponent extends React.Component<any, any> {
     public constructor(props: any) {
@@ -26,4 +26,5 @@ class AppComponent extends React.Component<any, any> {
     }
 };
 
+// tslint:disable-next-line:variable-name
 export const App = () => createProvider(AppComponent);

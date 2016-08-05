@@ -7,4 +7,3 @@ function sampleReducer (state = {}, action: any) {
 export const rootReducer = combineReducers({
     sampleReducer
 });
-
