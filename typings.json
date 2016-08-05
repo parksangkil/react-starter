@@ -3,6 +3,8 @@
     "del": "registry:npm/del#2.2.0+20160416211512",
     "react-dom": "registry:npm/react-dom#15.0.1+20160705210405",
     "react-redux": "registry:npm/react-redux#4.4.0+20160614222153",
+    "redux-storage": "registry:npm/redux-storage#4.0.0+20160310030142",
+    "redux-storage-engine-localstorage": "registry:npm/redux-storage-engine-localstorage#1.0.1+20160310030142",
     "redux-thunk": "registry:npm/redux-thunk#2.0.0+20160525185520",
     "validator": "registry:npm/validator#4.5.1+20160723033700",
     "webpack": "registry:npm/webpack#1.12.9+20160418172948"

@@ -1,11 +1,12 @@
 import {createStore} from "redux";
 import {rootReducer} from "../reducers/root";
 import {setUpMiddleware} from "./setUpMiddleware";
+import * as storage from "redux-storage";
 
-export function setUpStore(initialState: any) {
+export function setUpStore(storageEngineMiddleware: any) {
     return createStore(
-        rootReducer,
-        initialState,
-        setUpMiddleware()
+        storage.reducer(rootReducer),  // required by redux-storage
+        undefined,
+        setUpMiddleware(storageEngineMiddleware)
     );
 };

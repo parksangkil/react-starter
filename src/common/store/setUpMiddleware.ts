@@ -26,6 +26,7 @@ function applyMiddlewareAndInDevModeUseDevTools(middleware: Array<any>) {
     }
 }
 
-export function setUpMiddleware() {
+export function setUpMiddleware(storageEngineMiddleware: any) {
+    middlewareList.push(storageEngineMiddleware);
     return applyMiddlewareAndInDevModeUseDevTools(middlewareList);
 }
