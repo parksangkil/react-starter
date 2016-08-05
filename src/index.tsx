@@ -2,5 +2,6 @@
 import * as React from "react";
 import * as ReactDom from "react-dom";
 import {App} from "./web/App";
+import {createProvider} from "./common/createProvider";
 
-ReactDom.render(<App />, document.getElementById("app"));
+ReactDom.render(createProvider(App), document.getElementById("app"));

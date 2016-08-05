@@ -1,8 +1,9 @@
 import * as React from "react";
 import {Text, View} from "react-native";
 import {styles} from "./App.styles";
+import {createProvider} from "../common/createProvider";
 
-export class App extends React.Component<any, any> {
+class AppComponent extends React.Component<any, any> {
     public constructor(props: any) {
         super(props);
     }
@@ -24,3 +25,5 @@ export class App extends React.Component<any, any> {
         );
     }
 };
+
+export const App = () => createProvider(AppComponent);
