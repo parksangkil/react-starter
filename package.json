@@ -20,7 +20,8 @@
     "tsc-test-watch": "npm run pretest -- -w",
     "mocha-watch": "mocha -w",
     "test-watch": "run-p tsc-test-watch mocha-watch",
-    "dev": "run-p build-run-web-dev build-native-dev-watch lint-watch test-watch"
+    "dev": "run-p build-run-web-dev build-native-dev-watch lint-watch test-watch",
+    "build-android-release": "cd android && gradlew assembleRelease"
   },
   "dependencies": {
     "axios": "^0.13.1",
