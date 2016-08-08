@@ -12,7 +12,7 @@ var config = {
             'redux'
         ],
         app: [
-            path.join(__dirname, 'src', 'index.tsx')
+            path.join(__dirname, 'src', 'index.ts')
         ]
     },
 
