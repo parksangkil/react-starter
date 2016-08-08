@@ -6,7 +6,7 @@ import {createProvider} from "./common/store/createProvider";
 import createEngine from "redux-storage-engine-localstorage";
 import {StorageEngine} from "redux-storage";
 
-const storageEngine: StorageEngine = createEngine("gina-storage");
+const storageEngine: StorageEngine = createEngine("app-storage");
 const app: JSX.Element = createProvider(App, storageEngine);
 
 ReactDom.render(

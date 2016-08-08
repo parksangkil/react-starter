@@ -1,4 +1,4 @@
 import {AppRegistry} from 'react-native';
-import {App} from './app-native/native/App';
+import {NativeApp} from './app-native/native';
 
-AppRegistry.registerComponent('reactWebNativeReduxStarter', () => App);
+AppRegistry.registerComponent('reactWebNativeReduxStarter', () => NativeApp);

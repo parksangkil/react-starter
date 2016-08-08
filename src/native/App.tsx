@@ -1,11 +1,8 @@
 import * as React from "react";
 import {Text, View} from "react-native";
 import {styles} from "./App.styles";
-import {createProvider} from "../common/store/createProvider";
-import createEngine from "redux-storage-engine-reactnativeasyncstorage";
-import {StorageEngine} from "redux-storage";
 
-class AppComponent extends React.Component<any, any> {
+export class App extends React.Component<any, any> {
     public constructor(props: any) {
         super(props);
     }
@@ -27,8 +24,3 @@ class AppComponent extends React.Component<any, any> {
         );
     }
 };
-
-const storageEngine: StorageEngine = createEngine("gina-storage");
-
-// tslint:disable-next-line:variable-name
-export const App = () => createProvider(AppComponent, storageEngine);
