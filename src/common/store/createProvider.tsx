@@ -12,7 +12,7 @@ export function createProvider(
     const storageEngineMiddleware = storage.createMiddleware(storageEngine);
     const store = setUpStore(storageEngineMiddleware);
     const load = storage.createLoader(storageEngine);
-    load(store);
+    load(store);  // TODO: handle error states (load has Promise interface)
 
     return (
         <Provider store={store}>
