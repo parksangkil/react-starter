@@ -11,6 +11,8 @@ export function createProvider(
 ): JSX.Element {
     const storageEngineMiddleware = storage.createMiddleware(storageEngine);
     const store = setUpStore(storageEngineMiddleware);
+    const load = storage.createLoader(storageEngine);
+    load(store);
 
     return (
         <Provider store={store}>
