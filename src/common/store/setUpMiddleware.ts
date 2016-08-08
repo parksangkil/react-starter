@@ -1,6 +1,7 @@
-import {applyMiddleware, compose} from "redux";
 import * as Redux from "redux";
 import * as Thunk from "redux-thunk";
+
+import {applyMiddleware, compose} from "redux";
 
 const middlewareList: Array<Redux.Middleware> = [Thunk.default];
 

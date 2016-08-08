@@ -56,6 +56,7 @@
     "ts-loader": "^0.8.2",
     "tslint": "^3.14.0",
     "tslint-loader": "^2.1.5",
+    "tslint-react": "^0.4.0",
     "typescript": "^1.8.10",
     "watch": "^0.19.1",
     "webpack": "^1.13.1",

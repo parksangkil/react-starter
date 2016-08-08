@@ -1,4 +1,7 @@
 {
+    "extends": [
+        "tslint-react"
+    ],
     "rules": {
         "align": [
             true,
@@ -147,6 +150,9 @@
             "check-separator",
             "check-type",
             "check-typecast"
-        ]
+        ],
+        "jsx-alignment": true,
+        "jsx-no-lambda": true,
+        "jsx-no-string-ref": true
     }
 }

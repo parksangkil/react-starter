@@ -1,9 +1,9 @@
 // tslint:disable-next-line
 import * as React from "react";
-import {App} from "./App";
 import {createProvider} from "../common/store/createProvider";
-import createEngine from "redux-storage-engine-reactnativeasyncstorage";
+import {App} from "./App";
 import {StorageEngine} from "redux-storage";
+import createEngine from "redux-storage-engine-reactnativeasyncstorage";
 
 const storageEngine: StorageEngine = createEngine("app-storage");
 

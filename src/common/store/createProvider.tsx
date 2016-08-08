@@ -1,10 +1,12 @@
 import * as React from "react";
+import * as Redux from "redux";
+import * as Storage from "redux-storage";
+
+import {IntlProvider} from "react-intl";
 import {Provider} from "react-redux";
 import {setUpStore} from "./setUpStore";
-import {StorageEngine} from "redux-storage";
-import * as Storage from "redux-storage";
-import * as Redux from "redux";
 import {State} from "./State";
+import {StorageEngine} from "redux-storage";
 
 export function createProvider(  // tslint:disable-next-line:variable-name
     App: typeof React.Component,

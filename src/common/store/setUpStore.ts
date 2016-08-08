@@ -1,8 +1,9 @@
 import * as Redux from "redux";
+import * as Storage from "redux-storage";
+
 import {createStore} from "redux";
 import {rootReducer} from "../reducers/root";
 import {setUpMiddleware} from "./setUpMiddleware";
-import * as Storage from "redux-storage";
 import {State} from "./State";
 
 export function setUpStore(
