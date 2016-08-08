@@ -2,8 +2,8 @@ import * as React from "react";
 import {Text, View} from "react-native";
 import {styles} from "./App.styles";
 
-export class App extends React.Component<any, any> {
-    public constructor(props: any) {
+export class App extends React.Component<{}, {}> {
+    public constructor(props: {}) {
         super(props);
     }
 

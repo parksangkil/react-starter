@@ -1,13 +1,16 @@
 import {applyMiddleware, compose} from "redux";
-import * as thunk from "redux-thunk";
+import * as Redux from "redux";
+import * as Thunk from "redux-thunk";
 
-const middlewareList: Array<any> = [thunk.default];
+const middlewareList: Array<Redux.Middleware> = [Thunk.default];
 
+/* tslint:disable */
 function setUpReduxDevTools() {
     return typeof window === "object" &&
         typeof (window as any).devToolsExtension !== "undefined" ?
         (window as any).devToolsExtension() : (f: any) => f;
 }
+/* tslint:enable */
 
 declare var process: {
     env: {
@@ -15,7 +18,9 @@ declare var process: {
     }
 };
 
-function applyMiddlewareAndInDevModeUseDevTools(middleware: Array<any>) {
+function applyMiddlewareAndInDevModeUseDevTools(
+    middleware: Array<Redux.Middleware>
+): Redux.GenericStoreEnhancer {
     if (process.env.NODE_ENV === "production") {
         return applyMiddleware(...middleware);
     } else {
@@ -26,7 +31,9 @@ function applyMiddlewareAndInDevModeUseDevTools(middleware: Array<any>) {
     }
 }
 
-export function setUpMiddleware(storageEngineMiddleware: any) {
+export function setUpMiddleware(
+    storageEngineMiddleware: Redux.Middleware
+): Redux.GenericStoreEnhancer {
     middlewareList.push(storageEngineMiddleware);
     return applyMiddlewareAndInDevModeUseDevTools(middlewareList);
 }

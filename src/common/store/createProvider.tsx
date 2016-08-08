@@ -2,16 +2,18 @@ import * as React from "react";
 import {Provider} from "react-redux";
 import {setUpStore} from "./setUpStore";
 import {StorageEngine} from "redux-storage";
-import * as storage from "redux-storage";
+import * as Storage from "redux-storage";
+import * as Redux from "redux";
+import {State} from "./State";
 
-// tslint:disable-next-line:variable-name
-export function createProvider(
+export function createProvider(  // tslint:disable-next-line:variable-name
     App: typeof React.Component,
     storageEngine: StorageEngine
 ): JSX.Element {
-    const storageEngineMiddleware = storage.createMiddleware(storageEngine);
-    const store = setUpStore(storageEngineMiddleware);
-    const load = storage.createLoader(storageEngine);
+    const storageEngineMiddleware: Redux.Middleware =
+        Storage.createMiddleware(storageEngine);
+    const store: Redux.Store<State> = setUpStore(storageEngineMiddleware);
+    const load: Storage.Loader<State> = Storage.createLoader(storageEngine);
     load(store);  // TODO: handle error states (load has Promise interface)
 
     return (
