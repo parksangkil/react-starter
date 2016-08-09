@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import {FormattedMessage, FormattedRelative} from "./i18n/Formatted";
 import {styles} from "./App.styles";
 import {Text, View} from "react-native";
 
@@ -21,6 +22,17 @@ export class App extends React.Component<{}, {}> {
                     Double tap R on your keyboard to reload, {"\n"}
                     Shake or press menu button for dev menu
                 </Text>
+                <FormattedMessage
+                    intlProps={{
+                        defaultMessage: "default text",
+                        id: "pageOne.test"
+                    }}
+                />
+                <FormattedRelative
+                    intlProps={{
+                        value: Date.now()
+                    }}
+                />
             </View>
         );
     }

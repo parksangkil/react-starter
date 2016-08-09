@@ -14,6 +14,7 @@
     "classnames": "registry:dt/classnames#0.0.0+20160316155526",
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160602141504",
     "react": "registry:dt/react#0.14.0+20160802191555",
+    "react-intl": "registry:dt/react-intl#2.0.0+20160412155000",
     "react-native": "registry:dt/react-native#0.29.0+20160726035834",
     "redux": "registry:dt/redux#3.5.2+20160703092728",
     "redux-logger": "registry:dt/redux-logger#2.6.0+20160619033847"

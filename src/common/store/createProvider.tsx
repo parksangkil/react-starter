@@ -2,11 +2,11 @@ import * as React from "react";
 import * as Redux from "redux";
 import * as Storage from "redux-storage";
 
-import {IntlProvider} from "react-intl";
 import {Provider} from "react-redux";
 import {setUpStore} from "./setUpStore";
 import {State} from "./State";
 import {StorageEngine} from "redux-storage";
+import {Translate} from "../i18n/Translate";
 
 export function createProvider(  // tslint:disable-next-line:variable-name
     App: typeof React.Component,
@@ -20,7 +20,9 @@ export function createProvider(  // tslint:disable-next-line:variable-name
 
     return (
         <Provider store={store}>
-            <App />
+            <Translate>
+                <App />
+            </Translate>
         </Provider>
     );
 }
