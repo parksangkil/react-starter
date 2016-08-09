@@ -5,7 +5,7 @@ A starter kit for building universal React + React Native apps.
 * Maximum amount of code shared between web and mobile platforms
 * [TypeScript](https://github.com/Microsoft/TypeScript) as transpiler + [TSLint](https://palantir.github.io/tslint/) for linting
 * Excellent code completion support for [VS Code](https://code.visualstudio.com/)
-* [Redux](https://github.com/reactjs/redux) as Flux implementation
+* [Redux](https://github.com/reactjs/redux) as Flux implementation (support for [Redux Dev Tools](https://github.com/gaearon/redux-devtools) included)
 * Automatic state saving & loading for both web and mobile using [redux-storage](https://github.com/michaelcontento/redux-storage)
 * Internationalization support using [react-intl](https://github.com/yahoo/react-intl/)
 * Automated tests using [mocha](https://mochajs.org), [sinon](http://sinonjs.org/), [chai](http://chaijs.com/), [chai-as-promised](https://github.com/domenic/chai-as-promised), [sinon-chai](https://github.com/domenic/sinon-chai) and [enzyme](https://github.com/airbnb/enzyme)
@@ -36,3 +36,6 @@ A starter kit for building universal React + React Native apps.
 * Beware that at this time, the starter kit does not include any universal routing (actually no routing at all). This is due to the fact that web and mobile apps might require different page structure. However, this might change in the future. Also, adding [react-router](https://github.com/reactjs/react-router) is not an issue for advanced developers.
 * Feedback is welcome! :)
 * Help with macOS and iOS compatibility is also very welcome :)
+
+## Libraries
+See the `package.json` file.
