@@ -27,11 +27,12 @@ A starter kit for building universal React + React Native apps.
 * `npm run dev` - builds the app, starts webpack development server (hot loading included!); runs TypeScript compiler, linter and tests in watch mode in a single window
 * `npm run clean` - cleans build folders
 * `npm run build-web-prod` - creates production build for web
-* `npm run build-android-release` - creates production apk for Android (you need to modify the gradle config [according to the official guide](https://facebook.github.io/react-native/docs/signed-apk-android.html)!!!)
-* `react-native run-android` - starts the React Native packager and deploys the app on an Android phone connected to the PC (includes hot loading support!)
+* `npm run build-android-release` - creates production apk for Android (you need to modify the gradle config [according to the official guide](https://facebook.github.io/react-native/docs/signed-apk-android.html) first!!!)
+* `react-native run-android` - starts the React Native packager and deploys the app on an Android phone connected to the PC (don't forget to run `npm run dev` first!)
 * `npm run build-run-web-dev` - starts the webpack dev server and transpiles the app on-the-fly
 
 ## Remarks
 * Using [VS Code](https://code.visualstudio.com/) for development is highly recommended as this editor offers very nice code completion and many other cool features
 * Beware that at this time, the starter kit does not include any universal routing (actually no routing at all). This is due to the fact that web and mobile apps might require different page structure. However, this might change in the future. Also, adding [react-router](https://github.com/reactjs/react-router) is not an issue for advanced developers.
 * Feedback is welcome! :)
+* Help with macOS and iOS compatibility is also very welcome :)
