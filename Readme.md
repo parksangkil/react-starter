@@ -26,12 +26,13 @@ A starter kit for building universal React + React Native apps.
 5. Happy coding!
 
 ### Useful commands
-* `npm run dev` - builds the app, starts webpack development server (hot loading included!); runs TypeScript compiler, linter and tests in watch mode in a single window
+* `npm run dev` - builds the app for both web and mobile (watch mode), starts webpack development server (hot loading included!); runs TypeScript compiler, linter and tests in watch mode in a single window
 * `npm run clean` - cleans build folders
 * `npm run build-web-prod` - creates production build for web
 * `npm run build-android-release` - creates production apk for Android (you need to modify the gradle config [according to the official guide](https://facebook.github.io/react-native/docs/signed-apk-android.html) first!!!)
 * `react-native run-android` - starts the React Native packager and deploys the app on an Android phone connected to the PC (don't forget to run `npm run dev` first!)
 * `npm run build-run-web-dev` - starts the webpack dev server and transpiles the app on-the-fly
+* `npm run build-native-dev-watch` - builds mobile for dev, watch mode
 
 ## Remarks
 * Using [VS Code](https://code.visualstudio.com/) for development is highly recommended as this editor offers very nice code completion and many other cool features
