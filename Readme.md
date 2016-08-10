@@ -36,7 +36,8 @@ A starter kit for building universal React + React Native apps.
 ## Remarks
 * Using [VS Code](https://code.visualstudio.com/) for development is highly recommended as this editor offers very nice code completion and many other cool features
 * Beware that at this time, the starter kit does not include any universal routing (actually no routing at all). This is due to the fact that web and mobile apps might require different page structure. However, this might change in the future. Also, adding [react-router](https://github.com/reactjs/react-router) is not an issue for advanced developers.
-* If you do a full rebuild and the React Native packager crashes, just restart it using `react-native start` 
+* If you do a full rebuild and the React Native packager crashes, just restart it using `react-native start`
+* If you get red squiggly errors in VS Code for some of the project files, use `File -> Close folder` and then `File -> Open folder...`. This is probably an issue with VS Code.  
 * Feedback is welcome! :)
 * Help with macOS and iOS compatibility is also very welcome :)
 
