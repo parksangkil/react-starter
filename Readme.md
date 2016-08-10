@@ -14,14 +14,16 @@ A starter kit for building universal React + React Native apps.
 * Works on Windows, should work on Linux and macOS too
 
 ## Prerequisites
-* [Node](https://nodejs.org/en/) 6.x with NPM 3.x is required
+* [Node](https://nodejs.org/en/) 6.x with NPM 3.x
+* typings (`npm i typings -g`)
 
 ## Usage
 ### Quick start
-1. Clone this repo
+1. Clone this repo (beware that we use LF for line endings and they are forced by the linter, see [this post](http://stackoverflow.com/a/33424884/3979621) on SO on how to set git line endings to LF on Windows)
 2. Run `npm install`
-3. Run `npm run dev`
-4. Happy coding!
+3. Run `typings install && cd test && typings install`
+4. Run `npm run dev`
+5. Happy coding!
 
 ### Useful commands
 * `npm run dev` - builds the app, starts webpack development server (hot loading included!); runs TypeScript compiler, linter and tests in watch mode in a single window
