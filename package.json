@@ -1,6 +1,6 @@
 {
   "name": "react-web-native-redux-starter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "clean-copy-index": "npm run clean-app && mkdir app && cp src/index.html app/index.html",
